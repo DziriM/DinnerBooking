@@ -2,7 +2,7 @@ using BuberDinner.Application.Authentication.Common;
 using BuberDinner.Application.Common.Interfaces.Authentication;
 using BuberDinner.Application.Persistence;
 using BuberDinner.Domain.Common.Errors;
-using BuberDinner.Domain.Entities;
+using BuberDinner.Domain.User;
 using MediatR;
 using ErrorOr;
 
@@ -33,13 +33,11 @@ public class RegisterCommandHandler :
         }
         
         // 2. Create User (generate unique ID) & Persist to DB
-        var user = new User
-        {
-            FirstName = command.FirstName,
-            LastName = command.LastName,
-            Email = command.Email,
-            Password = command.Password
-        };
+        var user = User.Create(
+            command.FirstName,
+            command.LastName,
+            command.Email,
+            command.Password);
         
         _userRepository.Add(user);
         

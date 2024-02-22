@@ -166,6 +166,19 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
+      "BuberDinner.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "BuberDinner.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BuberDinner.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuberDinner.Contracts.dll": {}
+        }
+      },
       "BuberDinner.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -440,6 +453,11 @@
         "version.txt"
       ]
     },
+    "BuberDinner.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../BuberDinner.Contracts/BuberDinner.Contracts.csproj",
+      "msbuildProject": "../BuberDinner.Contracts/BuberDinner.Contracts.csproj"
+    },
     "BuberDinner.Domain/1.0.0": {
       "type": "project",
       "path": "../BuberDinner.Domain/BuberDinner.Domain.csproj",
@@ -448,6 +466,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "BuberDinner.Contracts >= 1.0.0",
       "BuberDinner.Domain >= 1.0.0",
       "FluentValidation >= 11.9.0",
       "FluentValidation.AspNetCore >= 11.3.0",
@@ -489,6 +508,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "W:\\CleanArchitectureDDDFromScratch\\BuberDinner\\BuberDinner.Contracts\\BuberDinner.Contracts.csproj": {
+              "projectPath": "W:\\CleanArchitectureDDDFromScratch\\BuberDinner\\BuberDinner.Contracts\\BuberDinner.Contracts.csproj"
+            },
             "W:\\CleanArchitectureDDDFromScratch\\BuberDinner\\BuberDinner.Domain\\BuberDinner.Domain.csproj": {
               "projectPath": "W:\\CleanArchitectureDDDFromScratch\\BuberDinner\\BuberDinner.Domain\\BuberDinner.Domain.csproj"
             }

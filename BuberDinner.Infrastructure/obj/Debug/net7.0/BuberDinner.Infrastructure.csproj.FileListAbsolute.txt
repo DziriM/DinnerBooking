@@ -15,3 +15,5 @@ W:\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Infrastructure\bin\De
 W:\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Infrastructure\bin\Debug\net7.0\BuberDinner.Application.pdb
 W:\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Infrastructure\bin\Debug\net7.0\BuberDinner.Domain.pdb
 W:\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Infrastructure\obj\Debug\net7.0\BuberDinner.Infrastructure.csproj.CopyComplete
+W:\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Infrastructure\bin\Debug\net7.0\BuberDinner.Contracts.dll
+W:\CleanArchitectureDDDFromScratch\BuberDinner\BuberDinner.Infrastructure\bin\Debug\net7.0\BuberDinner.Contracts.pdb

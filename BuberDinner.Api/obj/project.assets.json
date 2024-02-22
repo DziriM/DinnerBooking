@@ -465,6 +465,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "BuberDinner.Contracts": "1.0.0",
           "BuberDinner.Domain": "1.0.0",
           "FluentValidation": "11.9.0",
           "FluentValidation.AspNetCore": "11.3.0",
@@ -483,6 +484,9 @@
       "BuberDinner.Contracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "BuberDinner.Domain": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/BuberDinner.Contracts.dll": {}
         },

@@ -114,6 +114,9 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+              "W:\\CleanArchitectureDDDFromScratch\\BuberDinner\\BuberDinner.Contracts\\BuberDinner.Contracts.csproj": {
+                "projectPath": "W:\\CleanArchitectureDDDFromScratch\\BuberDinner\\BuberDinner.Contracts\\BuberDinner.Contracts.csproj"
+              },
               "W:\\CleanArchitectureDDDFromScratch\\BuberDinner\\BuberDinner.Domain\\BuberDinner.Domain.csproj": {
                 "projectPath": "W:\\CleanArchitectureDDDFromScratch\\BuberDinner\\BuberDinner.Domain\\BuberDinner.Domain.csproj"
               }
@@ -202,7 +205,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "W:\\CleanArchitectureDDDFromScratch\\BuberDinner\\BuberDinner.Domain\\BuberDinner.Domain.csproj": {
+                "projectPath": "W:\\CleanArchitectureDDDFromScratch\\BuberDinner\\BuberDinner.Domain\\BuberDinner.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

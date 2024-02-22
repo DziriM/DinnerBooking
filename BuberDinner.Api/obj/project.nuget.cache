@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "M28gvy6+F/q8Wl0OotO0G5FVMhPMatqnr2P7hMFJPTDE2SBm+QLAdGjuC9EqDVd6AjUgWNu8km+BprqGFCKLGA==",
+  "dgSpecHash": "e2nvz6rrpThgIkbtGANW5mC9JJ04C+gedKQZz2vld1GFOojZe0j4tWhRK3Ye8jFGPWIFjURF1/z8AV1/m4D6qQ==",
   "success": true,
   "projectFilePath": "W:\\CleanArchitectureDDDFromScratch\\BuberDinner\\BuberDinner.Api\\BuberDinner.Api.csproj",
   "expectedPackageFiles": [

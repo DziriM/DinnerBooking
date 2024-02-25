@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "8ILNjGvRrZOHnrV6UAOpk4yK8H2ZkBup4DI5fcy/TMNp844wgFt+XCRYAjHBLCqlydJluBozfeiQhEzxxViZzw==",
+  "dgSpecHash": "kvEyXNZPNSgrG2w7qPLYEyki+GPoBw6S32KjejlcveYCm4eeJh37npvUGHXSKpleU4WITMjSWCA1EdUQu79g/A==",
   "success": true,
   "projectFilePath": "W:\\CleanArchitectureDDDFromScratch\\BuberDinner\\BuberDinner.Contracts\\BuberDinner.Contracts.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Mouj\\.nuget\\packages\\erroror\\1.10.0\\erroror.1.10.0.nupkg.sha512"
+    "C:\\Users\\Mouj\\.nuget\\packages\\erroror\\1.10.0\\erroror.1.10.0.nupkg.sha512",
+    "C:\\Users\\Mouj\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512"
   ],
   "logs": []
 }

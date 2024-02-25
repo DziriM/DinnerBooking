@@ -183,7 +183,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "ErrorOr": "1.10.0"
+          "ErrorOr": "1.10.0",
+          "MediatR.Contracts": "2.0.1"
         },
         "compile": {
           "bin/placeholder/BuberDinner.Domain.dll": {}

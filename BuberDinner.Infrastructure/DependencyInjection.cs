@@ -4,10 +4,13 @@ using BuberDinner.Application.Common.Interfaces.Persistence;
 using BuberDinner.Application.Common.Interfaces.Services;
 using BuberDinner.Infrastructure.Authentication;
 using BuberDinner.Infrastructure.Persistence;
+using BuberDinner.Infrastructure.Persistence.Interceptors;
+using BuberDinner.Infrastructure.Persistence.Repositories;
 using BuberDinner.Infrastructure.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 
@@ -29,6 +32,12 @@ public static class DependencyInjection
     private static IServiceCollection AddPersistence(
         this IServiceCollection services)
     {
+        const string connectionString = "Server=localhost;Database=BuberDinner;User Id=sa;Password=Amiko123*;TRUSTED_CONNECTION=TRUE;Encrypt=false";
+        
+        services.AddDbContext<BuberDinnerDbContext>(options =>
+            options.UseSqlServer(connectionString));
+        
+        services.AddScoped<PublishDomainEventsInterceptor>();
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IMenuRepository, MenuRepository>();
 

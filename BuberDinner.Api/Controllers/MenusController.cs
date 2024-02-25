@@ -12,7 +12,7 @@ public class MenusController : ApiController
     private readonly IMapper _mapper;
     private readonly ISender _mediator;
 
-    public MenusController(IMapper mapper, IMediator mediator)
+    public MenusController(IMapper mapper, ISender mediator)
     {
         _mapper = mapper;
         _mediator = mediator;
@@ -21,7 +21,7 @@ public class MenusController : ApiController
     [HttpPost]
     public async Task<IActionResult> CreateMenu(
         CreateMenuRequest request,
-        string hostId)
+        Guid hostId)
     {
         var command = _mapper.Map<CreateMenuCommand>((request, hostId));
 

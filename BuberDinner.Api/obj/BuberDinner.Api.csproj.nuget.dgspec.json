@@ -61,6 +61,12 @@
             "Mapster.DependencyInjection": {
               "target": "Package",
               "version": "[1.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.1, )"
             }
           },
           "imports": [
@@ -284,6 +290,10 @@
             "ErrorOr": {
               "target": "Package",
               "version": "[1.10.0, )"
+            },
+            "MediatR.Contracts": {
+              "target": "Package",
+              "version": "[2.0.1, )"
             }
           },
           "imports": [
@@ -353,6 +363,14 @@
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[7.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.1, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",

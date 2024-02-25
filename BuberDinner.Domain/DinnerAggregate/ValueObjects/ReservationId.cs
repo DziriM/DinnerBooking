@@ -4,7 +4,7 @@ namespace BuberDinner.Domain.DinnerAggregate.ValueObjects;
 
 public class ReservationId  : ValueObject
 {
-    public Guid Value { get; }
+    public Guid Value { get; private set;}
 
     private ReservationId (Guid value)
     {

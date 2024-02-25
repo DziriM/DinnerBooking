@@ -7,29 +7,29 @@ using BuberDinner.Domain.MenuAggregate.ValueObjects;
 
 namespace BuberDinner.Domain.DinnerAggregate;
 
-public sealed class Dinner : AggregateRoot<DinnerId>
+public sealed class Dinner : AggregateRoot<DinnerId, Guid>
 {
     private readonly List<Reservation> _reservations = new();
 
-    public string Name { get; }
-    public string Description { get; }
-    public DateTime StartDateTime { get; }
-    public DateTime EndDateTime { get; }
+    public string Name { get; private set;}
+    public string Description { get; private set;}
+    public DateTime StartDateTime { get; private set;}
+    public DateTime EndDateTime { get; private set;}
     public DateTime? StartedDateTime { get; private set; }
     public DateTime? EndedDateTime { get; private set; }
-    public string Status { get; }
-    public bool IsPublic { get; }
-    public int MaxGuests { get; }
-    public Price Price { get; }
-    public HostId HostId { get; }
-    public MenuId MenuId { get; }
-    public string ImageUrl { get; }
-    public Location Location { get; }
+    public string Status { get; private set;}
+    public bool IsPublic { get; private set;}
+    public int MaxGuests { get; private set;}
+    public Price Price { get; private set;}
+    public HostId HostId { get; private set;}
+    public MenuId MenuId { get; private set;}
+    public string ImageUrl { get; private set;}
+    public Location Location { get; private set;}
 
     public IReadOnlyList<Reservation> Reservations => _reservations.AsReadOnly();
 
-    public DateTime CreatedDateTime { get; }
-    public DateTime UpdatedDateTime { get; }
+    public DateTime CreatedDateTime { get; private set;}
+    public DateTime UpdatedDateTime { get; private set;}
 
     private Dinner(
         DinnerId id,
@@ -96,4 +96,8 @@ public sealed class Dinner : AggregateRoot<DinnerId>
             DateTime.UtcNow,
             DateTime.UtcNow);
     }
+    
+#pragma warning disable CS8618
+    private Dinner() { }
+#pragma warning restore CS8618
 }

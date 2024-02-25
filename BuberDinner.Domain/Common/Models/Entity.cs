@@ -1,8 +1,13 @@
-namespace BuberDinner.Domain.Models;
+using BuberDinner.Domain.Models;
 
-public abstract class Entity<TId> : IEquatable<Entity<TId>>
-    where TId : notnull
+namespace BuberDinner.Domain.Common.Models;
+
+public abstract class Entity<TId> : IEquatable<Entity<TId>>, IHasDomainEvents
+    where TId : ValueObject
 {
+    private readonly List<IDomainEvent> _domainEvents = new List<IDomainEvent>();
+
+    public IReadOnlyList<IDomainEvent> DomainEvents => _domainEvents.AsReadOnly();
     public TId Id { get; protected set; }
 
     protected Entity(TId id)
@@ -34,4 +39,20 @@ public abstract class Entity<TId> : IEquatable<Entity<TId>>
     {
         return Id.GetHashCode();
     }
+
+    public void AddDomainEvent(IDomainEvent domainEvent)
+    {
+        _domainEvents.Add(domainEvent);
+    }
+    
+    public void ClearDomainEvents()
+    {
+        _domainEvents.Clear();
+    }
+    
+#pragma warning disable CS8618
+    protected Entity()
+    {
+    }
+#pragma warning restore CS8618
 }

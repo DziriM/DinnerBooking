@@ -3,7 +3,7 @@ using BuberDinner.Domain.DinnerAggregate.ValueObjects;
 namespace BuberDinner.Contracts.Menus;
 
 public record MenuResponse(
-    Guid Id,
+    string Id,
     string Name,
     string Description,
     float? AverageRating,

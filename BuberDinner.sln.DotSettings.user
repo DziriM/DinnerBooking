@@ -1,4 +1,15 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
   &lt;Assembly Path="C:\Users\Mouj\.nuget\packages\oneof\3.0.263\lib\netstandard2.0\OneOf.dll" /&gt;&#xD;
-&lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>
+&lt;/AssemblyExplorer&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=52944507_002D8600_002D431e_002D846b_002Ded325609e17e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="HandleCreateMenuCommand_WhenMenuIsValid_ShouldCreateAndReturnMenu #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::AD3B0E6A-FCF5-4DEA-B4F8-A8D74A885CCB::net7.0::BuberDinner.Application.UnitTests.Menus.Commands.CreateMenu.CreateMenuCommandHandlerTests.HandleCreateMenuCommand_WhenMenuIsValid_ShouldCreateAndReturnMenu&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=55c3ac70_002D43d6_002D4dda_002D8bb0_002D411a86166028/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="HandleCreateMenuCommand_WhenMenuIsValid_ShouldCreateAndReturnMenu" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::AD3B0E6A-FCF5-4DEA-B4F8-A8D74A885CCB::net7.0::BuberDinner.Application.UnitTests.Menus.Commands.CreateMenu.CreateMenuCommandHandlerTests.HandleCreateMenuCommand_WhenMenuIsValid_ShouldCreateAndReturnMenu&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	</wpf:ResourceDictionary>

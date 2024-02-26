@@ -33,7 +33,6 @@ public sealed class Host : AggregateRoot<HostId, Guid>
         UserId userId,
         DateTime createdDateTime,
         DateTime updatedDateTime)
-        : base(hostId)
     {
         FirstName = firstName;
         LastName = lastName;
@@ -52,7 +51,7 @@ public sealed class Host : AggregateRoot<HostId, Guid>
         UserId userId)
     {
         return new Host(
-            HostId.CreateUnique(),
+            HostId.Create(new Guid()),
             firstName,
             lastName,
             profileImage,

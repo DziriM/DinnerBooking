@@ -4,6 +4,8 @@
 
 ⚠️ This solution deliberately forgoes the implementation of security best practices, as it is intended solely as a demonstration project.
 
+------------------------------------------------------------------------------------------------------------------------------
+
 Greetings and welcome to our public GitHub repository. 
 
 Here, we embark on a meticulous endeavor to construct a robust REST API, meticulously adhering to the tenets of Clean Architecture and Domain-Driven Design (DDD) from inception.

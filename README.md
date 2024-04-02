@@ -16,6 +16,20 @@ We adhere to industry-standard methodologies, incorporating foundational pattern
 - Repository
 - Mediator
 
+Context : Developed a "The AirBnB for restaurants" project during free time, focusing on transforming dining rooms into restaurants.
+Constructed a system from scratch, adhering to Domain-Driven Design (DDD) principles, beginning with a comprehensive understanding of the domain space through Event Storming and Event Modeling.
+
+-> Utilized ASP.Net 6 REST API as the presentation layer.
+-> Established an agnostic data persistence layer to store Aggregates efficiently.
+-> Implemented CQRS pattern with MediatR to scale writing and reading jobs independently.
+-> Integrated Domain Events and Repository Pattern for efficient Aggregate storage.
+-> Employed the Ports And Adapter Architecture (Hexagonal Architecture) principles.
+-> Developed a mini testing framework to facilitate Test-Driven Development (TDD) throughout the development process.
+-> Technologies utilized include C#, ASP.Net 6, SQL Server, NUnit, Moq, FluentAssertions, and Docker.
+-> Leveraged open-source libraries such as MediatR, FluentValidation, ErrorOr, Throw, and Mapster.
+-> Established a scalable and robust system architecture that seamlessly integrated various design principles and technologies, facilitating efficient development and maintenance of the project.
+
+
 The main goal here is to ensure a codebase that is both scalable and maintainable.
 
 In addition to our architectural choices, we integrate select open-source libraries such as : 

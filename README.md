@@ -10,8 +10,6 @@
 > **Plateforme de réservation de dîners**, permettant aux utilisateurs de transformer leurs salles à manger en **restaurants privés**.  
 > Conçu avec une **architecture moderne et scalable**, ce projet illustre les bonnes pratiques en **.NET et DDD (Domain-Driven Design)**.  
 
-![DinnerBooking](https://via.placeholder.com/1000x300.png?text=DinnerBooking+App)  
-*(Tu peux remplacer cette image par un vrai visuel de l'application !)*  
 
 ---
 

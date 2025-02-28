@@ -6,51 +6,88 @@
 
 ------------------------------------------------------------------------------------------------------------------------------
 
-Greetings and welcome to our public GitHub repository. 
+🍽️ DinnerBooking
+Plateforme de réservation de dîners, permettant aux utilisateurs de transformer leurs salles à manger en restaurants privés. Conçu avec une architecture moderne et scalable, ce projet illustre les bonnes pratiques en .NET et DDD (Domain-Driven Design).
 
-Here, we embark on a meticulous endeavor to construct a robust REST API, meticulously adhering to the tenets of Clean Architecture and Domain-Driven Design (DDD) from inception.
-Within this project, we employ the latest advancements, notably .NET 6 and EF Core, to architect our solution with precision. 
-We adhere to industry-standard methodologies, incorporating foundational patterns such as :
-- CQRS
-- Unit of work
-- Repository
-- Mediator
+(Tu peux remplacer cette image par un vrai visuel de l'application !)
 
-Context : Developed a "The AirBnB for restaurants" project during free time, focusing on transforming dining rooms into restaurants.
-Constructed a system from scratch, adhering to Domain-Driven Design (DDD) principles, beginning with a comprehensive understanding of the domain space through Event Storming and Event Modeling.
+📌 Technologies & Outils
+🖥 Backend
+.NET 6 (ASP.NET Core) – API REST structurée et optimisée
+CQRS avec MediatR – Séparation claire des commandes et requêtes
+Entity Framework Core – ORM pour la gestion des données
+Repository & Unit of Work Patterns – Gestion efficace des entités
+DDD (Domain-Driven Design) – Architecture hexagonale & séparation des domaines
+🎨 Frontend (Non implémenté mais peut être ajouté plus tard)
+Prévu pour Angular 18 ou React (Possibilité d’évolution ! 🚀)
+🗄 Base de données
+SQL Server – Stockage principal
+SQLite (option pour tests & développement rapide)
+🚀 DevOps & CI/CD
+Docker – Conteneurisation pour déploiement flexible
+GitHub Actions – CI/CD pour build & tests automatisés (si ajouté plus tard)
+🎯 Fonctionnalités Clés
+✅ Gestion des réservations – Les hôtes peuvent publier leurs disponibilités et les invités réserver
+✅ Validation & Sécurité – Authentification JWT, validation des données
+✅ Architecture modulaire – Facilité d’extension avec de nouvelles fonctionnalités
+✅ Optimisation des requêtes – Utilisation avancée de LINQ & Entity Framework
+✅ Tests automatisés (TDD-ready) – xUnit, Moq, FluentAssertions
 
--> Utilized ASP.Net 6 REST API as the presentation layer.
+⚙️ Installation & Lancement
+1️⃣ Prérequis
+.NET 6+ installé
+SQL Server (ou SQLite pour dev rapide)
+Docker (optionnel pour exécuter les services en conteneurs)
+2️⃣ Cloner le repo
+bash
+Copier
+Modifier
+git clone https://github.com/DziriM/DinnerBooking.git
+cd DinnerBooking
+3️⃣ Configurer la base de données
+Mettre à jour appsettings.json pour pointer vers votre SQL Server
+Appliquer les migrations EF Core :
+bash
+Copier
+Modifier
+dotnet ef database update
+4️⃣ Lancer l’API
+bash
+Copier
+Modifier
+dotnet run --project DinnerBooking.API
+5️⃣ Tester l’API
+Accéder à Swagger UI : http://localhost:5000/swagger
 
--> Established an agnostic data persistence layer to store Aggregates efficiently.
+📖 Architecture & Explication
+DinnerBooking suit une architecture hexagonale avec les principes DDD & CQRS :
+📌 Domain – Logique métier pure (Aggrégats, Entities, Value Objects)
+📌 Application – Services applicatifs & gestion des commandes/requêtes (CQRS + MediatR)
+📌 Infrastructure – Accès aux données, stockage, communication avec SQL Server
+📌 API – Exposition des endpoints REST avec validation des entrées
 
--> Implemented CQRS pattern with MediatR to scale writing and reading jobs independently.
+📌 Gestion avancée des requêtes :
 
--> Integrated Domain Events and Repository Pattern for efficient Aggregate storage.
+CQRS avec MediatR – Séparation claire des lectures/écritures
+Unit of Work & Repository – Gestion optimisée des transactions
+Validation & Sécurité – FluentValidation + JWT
+🛠 Roadmap & Améliorations futures
+🔹 Intégration d’un frontend Angular/React (UI moderne et interactive)
+🔹 Ajout d’un système de paiements Stripe (Réservations payantes)
+🔹 Support multi-base de données (PostgreSQL, MongoDB)
+🔹 Monitoring avec Application Insights & Serilog
 
--> Employed the Ports And Adapter Architecture (Hexagonal Architecture) principles.
+🤝 Contribuer au projet
+Les contributions sont les bienvenues ! 🚀
 
--> Developed a mini testing framework to facilitate Test-Driven Development (TDD) throughout the development process.
+📌 Fork le repo
+📌 Crée une branche (git checkout -b feature-xxx)
+📌 Fais tes modifications et commit (git commit -m "Ajout de xxx")
+📌 Push ta branche et ouvre une Pull Request !
 
--> Technologies utilized include C#, ASP.Net 6, SQL Server, NUnit, Moq, FluentAssertions, and Docker.
+📄 Licence
+Ce projet est sous licence MIT – Utilisation et modification libres !
 
--> Established a scalable and robust system architecture that seamlessly integrated various design principles and technologies, facilitating efficient development and maintenance of the project.
-
-
-| The main goal here is to ensure a codebase that is both scalable and maintainable |
-
-In addition to our architectural choices, we integrated select open-source libraries such as : 
-- MediatR
-- FluentValidation
-- ErrorOr
-- Throw
-- Mapster and others.
-
-These augment our development experience, elevating our application's capabilities to meet contemporary standards.
-
-Our development environment centers on Rider JetBrains and the dotnet CLI.
-Leveraging a suite of meticulously chosen Rider plugins, we streamline our workflow, facilitating tasks ranging from crafting HTTP requests to database interaction, debugging, and token analysis.
-
-Classical TDD : This solution was built in a continuous cycle of coding and refactoring, systematically addressing a spectrum of conceptual nuances. 
 
 
   
